@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Task</title>
+</head>
+<body>
+
+  <form action="next-page.html" method="GET">
+    
+    <!-- First Name -->
+    <label for="firstName">First Name</label>
+    <input 
+      type="text" 
+      id="firstName" 
+      name="firstName" 
+      placeholder="First Name"
+      required 
+      pattern="[A-Za-z]{3,10}" 
+      autocomplete="off" 
+      title="Only letters, 3 to 10 characters"
+    >
+
+    <!-- Password -->
+    <label for="password">Password</label>
+    <input 
+      type="password" 
+      id="password" 
+      name="password" 
+      required 
+      autocomplete="off"
+      placeholder="At least 8 characters"
+      pattern="^(?=.*[a-z])|(?=.*[A-Z])|(?=.*\d)|(?=.*[\W_]).{1,}$"
+      title="Must contain at least one uppercase letter, lowercase letter, number, or special character"
+    >
+
+    <!-- Phone Number -->
+    <label for="phone">Phone Number</label>
+    <input 
+      type="tel" 
+      id="phone" 
+      name="phone"
+      placeholder="+20 1" 
+      required 
+      autocomplete="off"
+      pattern="^(010|011|015)\d{8}$"
+      title="Phone number must start with 010, 011, or 015 and be 11 digits"
+    >
+
+    <!-- Cars Name Select -->
+    <label for="car">Car Name</label>
+    <select id="car" name="car" required>
+      <option value="" disabled selected hidden>Select a car</option>
+      <option value="BMW">BMW</option>
+      <option value="Toyota">Toyota</option>
+      <option value="Honda">Honda</option>
+      <option value="Ford">Ford</option>
+      <option value="Tesla">Tesla</option>
+    </select>
+
+    <!-- Range Input -->
+    <label for="range">Range (50 - 250)</label>
+    <input 
+      type="range" 
+      id="range" 
+      name="range" 
+      min="50" 
+      max="250" 
+      value="200"
+      required
+    >
+    <br>
+    <button type="submit">Submit</button>
+
+  </form>
+
+
+</body>
+</html>

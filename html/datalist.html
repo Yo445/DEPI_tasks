@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Datalist and Multiple Select Example</title>
+</head>
+<body>
+
+  <h2>Using Datalist (Auto-suggest Input)</h2>
+  <form>
+    <label for="language">Choose a programming language:</label><br>
+    <input list="languages" id="language" name="language" placeholder="Start typing...">
+    <datalist id="languages">
+      <option value="HTML">
+      <option value="CSS">
+      <option value="JavaScript">
+      <option value="Python">
+      <option value="Java">
+      <option value="C++">
+      <option value="Go">
+    </datalist>
+    <br><br>
+
+    <h2>Multiple Selection Dropdown</h2>
+    <label for="tools">Select your favorite tools (you can choose more than one):</label><br>
+    <select id="tools" name="tools" multiple size="5">
+      <option value="VSCode">VS Code</option>
+      <option value="Figma">Figma</option>
+      <option value="GitHub">GitHub</option>
+      <option value="Photoshop">Photoshop</option>
+      <option value="Terminal">Terminal</option>
+    </select>
+    <br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bank CRUD System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bank CRUD System</h1>
+  <div class="container">
+    <!-- Add User Form -->
+    <form id="userForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="id" placeholder="User ID" required>
+      <input type="number" id="balance" placeholder="Balance" required>
+      <button type="submit">Add User</button>
+    </form>
+
+    <!-- Users Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>ID</th>
+          <th>Balance</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="usersTable"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
